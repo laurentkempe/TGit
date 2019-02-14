@@ -133,22 +133,19 @@
       </Group>
 
       <!--Toolbar Group-->
-      <Group guid="guidTGitCmdSet" id="ToolbarGroup" priority="0x0000">
+      <Group guid="guidTGitCmdSet" id="firstToolbarGroup" priority="0x0000">
         <Parent guid="guidTGitCmdSet" id="Toolbar" />
       </Group>
-      <Group guid="guidTGitCmdSet" id="secondMenuGroup" priority="0x0200">
+      <Group guid="guidTGitCmdSet" id="secondToolbarGroup" priority="0x0200">
         <Parent guid="guidTGitCmdSet" id="Toolbar"/>
       </Group>
-      <Group guid="guidTGitCmdSet" id="thirdMenuGroup" priority="0x0300">
+      <Group guid="guidTGitCmdSet" id="thirdToolbarGroup" priority="0x0300">
         <Parent guid="guidTGitCmdSet" id="Toolbar"/>
       </Group>
-      <Group guid="guidTGitCmdSet" id="fourthMenuGroup" priority="0x0400">
+      <Group guid="guidTGitCmdSet" id="fourthToolbarGroup" priority="0x0400">
         <Parent guid="guidTGitCmdSet" id="Toolbar"/>
       </Group>
-      <Group guid="guidTGitCmdSet" id="fifthMenuGroup" priority="0x0500">
-        <Parent guid="guidTGitCmdSet" id="Toolbar"/>
-      </Group>
-      <Group guid="guidTGitCmdSet" id="sixthMenuGroup" priority="0x0600">
+      <Group guid="guidTGitCmdSet" id="fifthToolbarGroup" priority="0x0500">
         <Parent guid="guidTGitCmdSet" id="Toolbar"/>
       </Group>
     </Groups>
@@ -253,6 +250,14 @@
           <ButtonText>Show Changes</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="showChanges" priority="0x0103" type="Button">
+        <Parent guid="guidTGitCmdSet" id="firstToolbarGroup" />
+        <Icon guid="toolbarImages" id="showChanges" />
+        <Strings>
+          <ButtonText>Show Changes</ButtonText>
+        </Strings>
+      </Button>
+              
       <Button guid="guidTGitCmdSet" id="pull" priority="0x0104" type="Button">
         <Parent guid="guidTGitCmdSet" id="secondMenuGroup" />
         <Icon guid="guidImages" id="pull" />
@@ -260,6 +265,14 @@
           <ButtonText>Pull...</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="pull" priority="0x0104" type="Button">
+        <Parent guid="guidTGitCmdSet" id="firstToolbarGroup" />
+        <Icon guid="toolbarImages" id="pull" />
+        <Strings>
+          <ButtonText>Pull...</ButtonText>
+        </Strings>
+      </Button>
+        
       <Button guid="guidTGitCmdSet" id="fetch" priority="0x0105" type="Button">
         <Parent guid="guidTGitCmdSet" id="secondMenuGroup" />
         <Icon guid="guidImages" id="fetch" />
@@ -267,6 +280,14 @@
           <ButtonText>Fetch...</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="fetch" priority="0x0105" type="Button">
+        <Parent guid="guidTGitCmdSet" id="firstToolbarGroup" />
+        <Icon guid="toolbarImages" id="fetch" />
+        <Strings>
+          <ButtonText>Fetch...</ButtonText>
+        </Strings>
+      </Button>
+        
       <Button guid="guidTGitCmdSet" id="commit" priority="0x0106" type="Button">
         <Parent guid="guidTGitCmdSet" id="secondMenuGroup" />
         <Icon guid="guidImages" id="commit" />
@@ -274,9 +295,24 @@
           <ButtonText>Commit...</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="commit" priority="0x0106" type="Button">
+        <Parent guid="guidTGitCmdSet" id="firstToolbarGroup" />
+        <Icon guid="toolbarImages" id="commit" />
+        <Strings>
+          <ButtonText>Commit...</ButtonText>
+        </Strings>
+      </Button>
+        
       <Button guid="guidTGitCmdSet" id="push" priority="0x0107" type="Button">
         <Parent guid="guidTGitCmdSet" id="secondMenuGroup" />
         <Icon guid="guidImages" id="push" />
+        <Strings>
+          <ButtonText>Push...</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTGitCmdSet" id="push" priority="0x0107" type="Button">
+        <Parent guid="guidTGitCmdSet" id="firstToolbarGroup" />
+        <Icon guid="toolbarImages" id="push" />
         <Strings>
           <ButtonText>Push...</ButtonText>
         </Strings>
@@ -289,6 +325,14 @@
           <ButtonText>Show Log</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="showLog" priority="0x0100" type="Button">
+        <Parent guid="guidTGitCmdSet" id="secondToolbarGroup" />
+        <Icon guid="toolbarImages" id="showLog" />
+        <Strings>
+          <ButtonText>Show Log</ButtonText>
+        </Strings>
+      </Button>
+        
       <Button guid="guidTGitCmdSet" id="diskBrowser" priority="0x0200" type="Button">
         <Parent guid="guidTGitCmdSet" id="thirdMenuGroup" />
         <Icon guid="guidImages" id="disk" />
@@ -296,6 +340,14 @@
           <ButtonText>Disk-Browser</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="diskBrowser" priority="0x0200" type="Button">
+        <Parent guid="guidTGitCmdSet" id="secondToolbarGroup" />
+        <Icon guid="toolbarImages" id="disk" />
+        <Strings>
+          <ButtonText>Disk-Browser</ButtonText>
+        </Strings>
+      </Button>
+        
       <Button guid="guidTGitCmdSet" id="repoBrowser" priority="0x0300" type="Button">
         <Parent guid="guidTGitCmdSet" id="thirdMenuGroup" />
         <Icon guid="guidImages" id="repo" />
@@ -303,9 +355,24 @@
           <ButtonText>Repo-Browser</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="repoBrowser" priority="0x0300" type="Button">
+        <Parent guid="guidTGitCmdSet" id="secondToolbarGroup" />
+        <Icon guid="toolbarImages" id="repo" />
+        <Strings>
+          <ButtonText>Repo-Browser</ButtonText>
+        </Strings>
+      </Button>
+        
       <Button guid="guidTGitCmdSet" id="revGraph" priority="0x0400" type="Button">
         <Parent guid="guidTGitCmdSet" id="thirdMenuGroup" />
         <Icon guid="guidImages" id="revgraph" />
+        <Strings>
+          <ButtonText>Revision Graph</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTGitCmdSet" id="revGraph" priority="0x0400" type="Button">
+        <Parent guid="guidTGitCmdSet" id="secondToolbarGroup" />
+        <Icon guid="toolbarImages" id="revgraph" />
         <Strings>
           <ButtonText>Revision Graph</ButtonText>
         </Strings>
@@ -318,10 +385,24 @@
           <ButtonText>Create Stash...</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="createStash" priority="0x0100" type="Button">
+        <Parent guid="guidTGitCmdSet" id="thirdToolbarGroup" />
+        <Icon guid="toolbarImages" id="stash" />
+        <Strings>
+          <ButtonText>Create Stash...</ButtonText>
+        </Strings>
+      </Button>
 
       <Button guid="guidTGitCmdSet" id="applyStash" priority="0x0200" type="Button">
         <Parent guid="guidTGitCmdSet" id="fourthMenuGroup" />
         <Icon guid="guidImages" id="stash" />
+        <Strings>
+          <ButtonText>Apply Stash...</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTGitCmdSet" id="applyStash" priority="0x0200" type="Button">
+        <Parent guid="guidTGitCmdSet" id="thirdToolbarGroup" />
+        <Icon guid="toolbarImages" id="stash" />
         <Strings>
           <ButtonText>Apply Stash...</ButtonText>
         </Strings>
@@ -334,10 +415,24 @@
           <ButtonText>Branch...</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="branch" priority="0x0100" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fourthToolbarGroup" />
+        <Icon guid="toolbarImages" id="branch" />
+        <Strings>
+          <ButtonText>Branch...</ButtonText>
+        </Strings>
+      </Button>
 
       <Button guid="guidTGitCmdSet" id="switch" priority="0x0200" type="Button">
         <Parent guid="guidTGitCmdSet" id="fifthMenuGroup" />
         <Icon guid="guidImages" id="switch" />
+        <Strings>
+          <ButtonText>Switch...</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTGitCmdSet" id="switch" priority="0x0200" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fourthToolbarGroup" />
+        <Icon guid="toolbarImages" id="switch" />
         <Strings>
           <ButtonText>Switch...</ButtonText>
         </Strings>
@@ -350,10 +445,24 @@
           <ButtonText>Merge...</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="merge" priority="0x0300" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fourthToolbarGroup" />
+        <Icon guid="toolbarImages" id="merge" />
+        <Strings>
+          <ButtonText>Merge...</ButtonText>
+        </Strings>
+      </Button>
 
       <Button guid="guidTGitCmdSet" id="rebase" priority="0x0400" type="Button">
         <Parent guid="guidTGitCmdSet" id="fifthMenuGroup" />
         <Icon guid="guidImages" id="rebase" />
+        <Strings>
+          <ButtonText>Rebase...</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTGitCmdSet" id="rebase" priority="0x0400" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fourthToolbarGroup" />
+        <Icon guid="toolbarImages" id="rebase" />
         <Strings>
           <ButtonText>Rebase...</ButtonText>
         </Strings>
@@ -366,10 +475,24 @@
           <ButtonText>Revert...</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="revert" priority="0x0100" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fifthToolbarGroup" />
+        <Icon guid="toolbarImages" id="revert" />
+        <Strings>
+          <ButtonText>Revert...</ButtonText>
+        </Strings>
+      </Button>
 
       <Button guid="guidTGitCmdSet" id="resolve" priority="0x0200" type="Button">
         <Parent guid="guidTGitCmdSet" id="sixthMenuGroup" />
         <Icon guid="guidImages" id="resolve" />
+        <Strings>
+          <ButtonText>Resolve...</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTGitCmdSet" id="resolve" priority="0x0200" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fifthToolbarGroup" />
+        <Icon guid="toolbarImages" id="resolve" />
         <Strings>
           <ButtonText>Resolve...</ButtonText>
         </Strings>
@@ -382,10 +505,24 @@
           <ButtonText>Abort merge...</ButtonText>
         </Strings>
       </Button>
-
+      <Button guid="guidTGitCmdSet" id="abortMerge" priority="0x0200" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fifthToolbarGroup" />
+        <Icon guid="toolbarImages" id="abortMerge" />
+        <Strings>
+          <ButtonText>Abort merge...</ButtonText>
+        </Strings>
+      </Button>
+      
       <Button guid="guidTGitCmdSet" id="tag" priority="0x0200" type="Button">
         <Parent guid="guidTGitCmdSet" id="sixthMenuGroup" />
         <Icon guid="guidImages" id="tag" />
+        <Strings>
+          <ButtonText>Tag...</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTGitCmdSet" id="tag" priority="0x0200" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fifthToolbarGroup" />
+        <Icon guid="toolbarImages" id="tag" />
         <Strings>
           <ButtonText>Tag...</ButtonText>
         </Strings>
@@ -398,10 +535,24 @@
           <ButtonText>Sync</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="sync" priority="0x0300" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fifthToolbarGroup" />
+        <Icon guid="toolbarImages" id="sync" />
+        <Strings>
+          <ButtonText>Sync</ButtonText>
+        </Strings>
+      </Button>
 
       <Button guid="guidTGitCmdSet" id="cleanup" priority="0x0400" type="Button">
         <Parent guid="guidTGitCmdSet" id="sixthMenuGroup" />
         <Icon guid="guidImages" id="cleanup" />
+        <Strings>
+          <ButtonText>Cleanup working copy...</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidTGitCmdSet" id="cleanup" priority="0x0400" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fifthToolbarGroup" />
+        <Icon guid="toolbarImages" id="cleanup" />
         <Strings>
           <ButtonText>Cleanup working copy...</ButtonText>
         </Strings>
@@ -414,7 +565,15 @@
           <ButtonText>Browse references...</ButtonText>
         </Strings>
       </Button>
+      <Button guid="guidTGitCmdSet" id="browseRef" priority="0x0500" type="Button">
+        <Parent guid="guidTGitCmdSet" id="fifthToolbarGroup" />
+        <Icon guid="toolbarImages" id="browseRef" />
+        <Strings>
+          <ButtonText>Browse references...</ButtonText>
+        </Strings>
+      </Button>
 
+      <!--Context Menu Buttons-->
       <Button guid="guidTGitCmdSet" id="showLogContext" priority="0x0100" type="Button">
         <Parent guid="guidTGitCmdSet" id="firstContextMenuGroup" />
         <Icon guid="guidImages" id="showLog" />
@@ -504,9 +663,13 @@
       </Button>
     </Buttons>
   
-    <!--Menu icons-->
     <Bitmaps>
+      <!--Menu icons-->
       <Bitmap guid="guidImages" 
+              href="Resources\octicons.png" 
+              usedList="showChanges, pull, push, showLog, revert, branch, merge, differences, blame, repo, resolve, sync, commit, disk, switch, cleanup, stash, fetch, browseRef, tag, abortMerge, rebase, revgraph"/>     
+      <!--Toolbar icons-->
+      <Bitmap guid="toolbarImages" 
               href="Resources\octicons.png" 
               usedList="showChanges, pull, push, showLog, revert, branch, merge, differences, blame, repo, resolve, sync, commit, disk, switch, cleanup, stash, fetch, browseRef, tag, abortMerge, rebase, revgraph"/>     
     </Bitmaps>
@@ -535,6 +698,31 @@
 
     <Symbols>
     <GuidSymbol name="guidImages" value="{fec49b6d-c04a-42bd-b021-b8b2e5cfb291}" >
+      <IDSymbol name="showChanges" value="1" />
+      <IDSymbol name="pull" value="2" />
+      <IDSymbol name="push" value="3" />
+      <IDSymbol name="showLog" value="4" />
+      <IDSymbol name="revert" value="5" />
+      <IDSymbol name="branch" value="6" />
+      <IDSymbol name="merge" value="7" />
+      <IDSymbol name="differences" value="8" />
+      <IDSymbol name="blame" value="9" />
+      <IDSymbol name="repo" value="10" />
+      <IDSymbol name="resolve" value="11" />
+      <IDSymbol name="sync" value="12" />
+      <IDSymbol name="commit" value="13" />
+      <IDSymbol name="disk" value="14" />
+      <IDSymbol name="switch" value="15" />
+      <IDSymbol name="cleanup" value="16" />
+      <IDSymbol name="stash" value="17" />
+      <IDSymbol name="fetch" value="18" />
+      <IDSymbol name="browseRef" value="19" />
+      <IDSymbol name="tag" value="20" />
+      <IDSymbol name="abortMerge" value="21" />
+      <IDSymbol name="rebase" value="22" />
+      <IDSymbol name="revgraph" value="23" />
+    </GuidSymbol>
+    <GuidSymbol name="toolbarImages" value="{19de5b5f-0626-4ca2-b6f7-757d2e1c0850}" >
       <IDSymbol name="showChanges" value="1" />
       <IDSymbol name="pull" value="2" />
       <IDSymbol name="push" value="3" />
@@ -620,8 +808,12 @@
 
       <!--Toolbar Menu-->
       <IDSymbol name="Toolbar" value="0x1000" />
-      <IDSymbol name="ToolbarGroup" value="0x1050" />
-
+      <IDSymbol name="firstToolbarGroup" value="0x1050" />
+      <IDSymbol name="secondToolbarGroup" value="0x1051" />
+      <IDSymbol name="thirdToolbarGroup" value="0x1052" />
+      <IDSymbol name="fourthToolbarGroup" value="0x1053" />
+      <IDSymbol name="fifthToolbarGroup" value="0x1054" />
+      
       <!--Commands-->
       <IDSymbol name="showChanges" value="0x0103" />
       <IDSymbol name="pull" value="0x0104" />
